@@ -27,7 +27,21 @@ class MainApp extends StatelessWidget {
                 child: Text(
                   'Boîte stylisée avec Container',
                   style: TextStyle(color: Colors.white, fontSize: 18),
-                ))
+                )),
+                Stack(
+                  alignment: Alignment.topCenter,
+                  children: [
+                    Container(width: 200, height: 200, color: Colors.blue[100]),
+                    Icon(Icons.star, size: 100, color: Colors.amber),
+                    Text("Superposé !",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    ]
+                    
+                    
+
+                ),
+                
             ],
             
             
